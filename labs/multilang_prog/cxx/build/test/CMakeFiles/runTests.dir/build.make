@@ -73,15 +73,15 @@ test/CMakeFiles/runTests.dir/test.cpp.o: test/CMakeFiles/runTests.dir/flags.make
 test/CMakeFiles/runTests.dir/test.cpp.o: /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp
 test/CMakeFiles/runTests.dir/test.cpp.o: test/CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runTests.dir/test.cpp.o"
-	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runTests.dir/test.cpp.o -MF CMakeFiles/runTests.dir/test.cpp.o.d -o CMakeFiles/runTests.dir/test.cpp.o -c /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp
+	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runTests.dir/test.cpp.o -MF CMakeFiles/runTests.dir/test.cpp.o.d -o CMakeFiles/runTests.dir/test.cpp.o -c /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp
 
 test/CMakeFiles/runTests.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/test.cpp.i"
-	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp > CMakeFiles/runTests.dir/test.cpp.i
+	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp > CMakeFiles/runTests.dir/test.cpp.i
 
 test/CMakeFiles/runTests.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/test.cpp.s"
-	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp -o CMakeFiles/runTests.dir/test.cpp.s
+	cd /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/test.cpp -o CMakeFiles/runTests.dir/test.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \

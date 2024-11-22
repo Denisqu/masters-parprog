@@ -8,6 +8,11 @@ namespace SingleThreaded_NonVectorized {
 ComplexVector FFTConverter::convert(const ComplexVector& inputVector)
 {
     auto result = inputVector;
+
+    if (result.size() % 2 != 0) {
+        result.push_back(ComplexValue{0, 0});
+    }
+
     convertMutable(result);
     return result;
 }
@@ -15,12 +20,12 @@ ComplexVector FFTConverter::convert(const ComplexVector& inputVector)
 void FFTConverter::convertMutable(ComplexVector& inputVector)
 {
     int n = inputVector.size();
-    if (n == 1) {
+    if (n <= 1) {
         return;
     }
 
     ComplexVector a0(n / 2), a1(n / 2);
-    for (int i = 0; 2 * i < n; i++) {
+    for (int i = 0; i < n / 2; i++) {
         a0[i] = inputVector[2*i];
         a1[i] = inputVector[2*i+1];
     }

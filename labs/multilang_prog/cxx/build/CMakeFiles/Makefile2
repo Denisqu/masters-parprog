@@ -81,16 +81,34 @@ clean: test/clean
 # Directory level rules for directory lib
 
 # Recursive "all" directory target.
+lib/all: lib/shared/all
 lib/all: lib/singlethreaded_nonvectorized/all
 .PHONY : lib/all
 
 # Recursive "preinstall" directory target.
+lib/preinstall: lib/shared/preinstall
 lib/preinstall: lib/singlethreaded_nonvectorized/preinstall
 .PHONY : lib/preinstall
 
 # Recursive "clean" directory target.
+lib/clean: lib/shared/clean
 lib/clean: lib/singlethreaded_nonvectorized/clean
 .PHONY : lib/clean
+
+#=============================================================================
+# Directory level rules for directory lib/shared
+
+# Recursive "all" directory target.
+lib/shared/all:
+.PHONY : lib/shared/all
+
+# Recursive "preinstall" directory target.
+lib/shared/preinstall:
+.PHONY : lib/shared/preinstall
+
+# Recursive "clean" directory target.
+lib/shared/clean:
+.PHONY : lib/shared/clean
 
 #=============================================================================
 # Directory level rules for directory lib/singlethreaded_nonvectorized

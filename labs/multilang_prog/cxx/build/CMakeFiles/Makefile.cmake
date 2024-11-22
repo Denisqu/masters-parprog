@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/CMakeLists.txt"
+  "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared/CMakeLists.txt"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized/CMakeLists.txt"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake"
@@ -57,6 +58,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/shared/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/singlethreaded_nonvectorized/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )

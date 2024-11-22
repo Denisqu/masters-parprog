@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libsinglethreaded_nonvectorized.so -o libsinglethreaded_nonvectorized.so CMakeFiles/singlethreaded_nonvectorized.dir/singlethreaded_nonvectorized.cpp.o 
