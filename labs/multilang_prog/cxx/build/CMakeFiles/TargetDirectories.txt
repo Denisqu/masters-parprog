@@ -1,0 +1,10 @@
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/CMakeFiles/edit_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/CMakeFiles/rebuild_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/lib/CMakeFiles/edit_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/lib/CMakeFiles/rebuild_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/lib/singlethreaded_nonvectorized/CMakeFiles/edit_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/lib/singlethreaded_nonvectorized/CMakeFiles/rebuild_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test/CMakeFiles/runTests.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test/CMakeFiles/edit_cache.dir
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/build/test/CMakeFiles/rebuild_cache.dir
