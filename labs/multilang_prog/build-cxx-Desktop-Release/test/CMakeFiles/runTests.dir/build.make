@@ -92,8 +92,9 @@ runTests_EXTERNAL_OBJECTS =
 
 test/runTests: test/CMakeFiles/runTests.dir/test.cpp.o
 test/runTests: test/CMakeFiles/runTests.dir/build.make
-test/runTests: lib/singlethreaded_nonvectorized/libsinglethreaded_nonvectorized.so
 test/runTests: /usr/lib/x86_64-linux-gnu/libgtest.a
+test/runTests: lib/singlethreaded_nonvectorized/libsinglethreaded_nonvectorized.so
+test/runTests: lib/singlethreaded_nonvectorized_optimized/libsinglethreaded_nonvectorized_optimized.so
 test/runTests: test/CMakeFiles/runTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runTests"
 	cd /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared
+CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized
 
 CXX_FLAGS = -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -std=c++20
 

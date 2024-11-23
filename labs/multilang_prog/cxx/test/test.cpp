@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "singlethreaded_nonvectorized.hpp"
+#include "singlethreaded_nonvectorized_optimized.hpp"
 
 namespace {
 
@@ -17,12 +18,23 @@ const ComplexVector& sineWave(uint32_t numPoints = 0, double freq = 0) {
 
 TEST(FFT_OF_SINEWAVE_SINGLETHREADED_NON_VECTORIZED, FFT)
 {
-    SingleThreaded_NonVectorized::FFTConverter::convert(sineWave());
-    ASSERT_EQ(true, true);
+    //GTEST_SKIP() << "done";
+
+    const auto result = SingleThreaded_NonVectorized::FFTConverter::convert(sineWave());
+    ASSERT_EQ(result.empty(), false);
+}
+
+
+TEST(FFT_OF_SINEWAVE_SINGLETHREADED_NON_VECTORIZED_OPTIMIZED, FFT)
+{
+    //GTEST_SKIP() << "done";
+
+    const auto result = SingleThreaded_NonVectorized_Optimized::FFTConverter::convert(sineWave());
+    ASSERT_EQ(result.empty(), false);
 }
 
 int main(int argc, char** argv) {
-    sineWave(10e7, 2.4e9);
+    sineWave(1 << 26, 2.4e9);
 
     ::testing::InitGoogleTest(&argc, argv);
 

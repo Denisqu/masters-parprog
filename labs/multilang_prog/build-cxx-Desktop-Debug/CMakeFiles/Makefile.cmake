@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/CMakeLists.txt"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared/CMakeLists.txt"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized/CMakeLists.txt"
+  "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/CMakeLists.txt"
   "/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/test/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake"
@@ -60,11 +61,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/shared/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/singlethreaded_nonvectorized/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/singlethreaded_nonvectorized_optimized/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/DependInfo.cmake"
+  "lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/DependInfo.cmake"
   "test/CMakeFiles/runTests.dir/DependInfo.cmake"
   )

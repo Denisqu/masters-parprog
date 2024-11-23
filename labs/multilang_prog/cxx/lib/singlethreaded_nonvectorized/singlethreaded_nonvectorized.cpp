@@ -9,11 +9,8 @@ ComplexVector FFTConverter::convert(const ComplexVector& inputVector)
 {
     auto result = inputVector;
 
-    if (result.size() % 2 != 0) {
-        result.push_back(ComplexValue{0, 0});
-    }
-
     convertMutable(result);
+
     return result;
 }
 

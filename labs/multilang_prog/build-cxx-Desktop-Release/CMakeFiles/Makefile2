@@ -83,16 +83,22 @@ clean: test/clean
 # Recursive "all" directory target.
 lib/all: lib/shared/all
 lib/all: lib/singlethreaded_nonvectorized/all
+lib/all: lib/singlethreaded_nonvectorized_optimized/all
+lib/all: lib/singlethreaded_vectorized_optimized/all
 .PHONY : lib/all
 
 # Recursive "preinstall" directory target.
 lib/preinstall: lib/shared/preinstall
 lib/preinstall: lib/singlethreaded_nonvectorized/preinstall
+lib/preinstall: lib/singlethreaded_nonvectorized_optimized/preinstall
+lib/preinstall: lib/singlethreaded_vectorized_optimized/preinstall
 .PHONY : lib/preinstall
 
 # Recursive "clean" directory target.
 lib/clean: lib/shared/clean
 lib/clean: lib/singlethreaded_nonvectorized/clean
+lib/clean: lib/singlethreaded_nonvectorized_optimized/clean
+lib/clean: lib/singlethreaded_vectorized_optimized/clean
 .PHONY : lib/clean
 
 #=============================================================================
@@ -124,6 +130,36 @@ lib/singlethreaded_nonvectorized/preinstall:
 # Recursive "clean" directory target.
 lib/singlethreaded_nonvectorized/clean: lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/clean
 .PHONY : lib/singlethreaded_nonvectorized/clean
+
+#=============================================================================
+# Directory level rules for directory lib/singlethreaded_nonvectorized_optimized
+
+# Recursive "all" directory target.
+lib/singlethreaded_nonvectorized_optimized/all: lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/all
+.PHONY : lib/singlethreaded_nonvectorized_optimized/all
+
+# Recursive "preinstall" directory target.
+lib/singlethreaded_nonvectorized_optimized/preinstall:
+.PHONY : lib/singlethreaded_nonvectorized_optimized/preinstall
+
+# Recursive "clean" directory target.
+lib/singlethreaded_nonvectorized_optimized/clean: lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/clean
+.PHONY : lib/singlethreaded_nonvectorized_optimized/clean
+
+#=============================================================================
+# Directory level rules for directory lib/singlethreaded_vectorized_optimized
+
+# Recursive "all" directory target.
+lib/singlethreaded_vectorized_optimized/all: lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/all
+.PHONY : lib/singlethreaded_vectorized_optimized/all
+
+# Recursive "preinstall" directory target.
+lib/singlethreaded_vectorized_optimized/preinstall:
+.PHONY : lib/singlethreaded_vectorized_optimized/preinstall
+
+# Recursive "clean" directory target.
+lib/singlethreaded_vectorized_optimized/clean: lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/clean
+.PHONY : lib/singlethreaded_vectorized_optimized/clean
 
 #=============================================================================
 # Directory level rules for directory test
@@ -167,10 +203,63 @@ lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/cle
 .PHONY : lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/clean
 
 #=============================================================================
+# Target rules for target lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir
+
+# All Build rule for target.
+lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build.make lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build.make lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles --progress-num=5,6 "Built target singlethreaded_nonvectorized_optimized"
+.PHONY : lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/all
+
+# Build rule for subdir invocation for target.
+lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 0
+.PHONY : lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/rule
+
+# Convenience name for target.
+singlethreaded_nonvectorized_optimized: lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/rule
+.PHONY : singlethreaded_nonvectorized_optimized
+
+# clean rule for target.
+lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build.make lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/clean
+.PHONY : lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/clean
+
+#=============================================================================
+# Target rules for target lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir
+
+# All Build rule for target.
+lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build.make lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build.make lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles --progress-num=7,8 "Built target singlethreaded_vectorized_optimized"
+.PHONY : lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/all
+
+# Build rule for subdir invocation for target.
+lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 0
+.PHONY : lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/rule
+
+# Convenience name for target.
+singlethreaded_vectorized_optimized: lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/rule
+.PHONY : singlethreaded_vectorized_optimized
+
+# clean rule for target.
+lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build.make lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/clean
+.PHONY : lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/runTests.dir
 
 # All Build rule for target.
 test/CMakeFiles/runTests.dir/all: lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/all
+test/CMakeFiles/runTests.dir/all: lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles --progress-num=1,2 "Built target runTests"
@@ -178,7 +267,7 @@ test/CMakeFiles/runTests.dir/all: lib/singlethreaded_nonvectorized/CMakeFiles/si
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles 0
 .PHONY : test/CMakeFiles/runTests.dir/rule

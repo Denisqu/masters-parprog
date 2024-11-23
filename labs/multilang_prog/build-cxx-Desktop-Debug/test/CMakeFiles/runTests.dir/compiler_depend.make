@@ -401,7 +401,8 @@ test/CMakeFiles/runTests.dir/test.cpp.o: /home/user/univer/homework_and_labs/lab
   /usr/include/c++/12/tr1/modified_bessel_func.tcc \
   /usr/include/c++/12/tr1/poly_hermite.tcc \
   /usr/include/c++/12/tr1/poly_laguerre.tcc \
-  /usr/include/c++/12/tr1/riemann_zeta.tcc
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
+  /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/singlethreaded_nonvectorized_optimized.hpp
 
 
 /usr/include/c++/12/tr1/poly_laguerre.tcc:
@@ -545,6 +546,8 @@ test/CMakeFiles/runTests.dir/test.cpp.o: /home/user/univer/homework_and_labs/lab
 /usr/include/c++/12/bits/semaphore_base.h:
 
 /usr/include/c++/12/semaphore:
+
+/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/singlethreaded_nonvectorized_optimized.hpp:
 
 /usr/include/c++/12/atomic:
 

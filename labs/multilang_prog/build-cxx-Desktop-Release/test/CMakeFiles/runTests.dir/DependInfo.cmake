@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/lib/singlethreaded_nonvectorized/CMakeFiles/singlethreaded_nonvectorized.dir/DependInfo.cmake"
+  "/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

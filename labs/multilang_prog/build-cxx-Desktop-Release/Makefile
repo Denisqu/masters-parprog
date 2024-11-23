@@ -130,6 +130,32 @@ singlethreaded_nonvectorized/fast:
 .PHONY : singlethreaded_nonvectorized/fast
 
 #=============================================================================
+# Target rules for targets named singlethreaded_nonvectorized_optimized
+
+# Build rule for target.
+singlethreaded_nonvectorized_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlethreaded_nonvectorized_optimized
+.PHONY : singlethreaded_nonvectorized_optimized
+
+# fast build rule for target.
+singlethreaded_nonvectorized_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build.make lib/singlethreaded_nonvectorized_optimized/CMakeFiles/singlethreaded_nonvectorized_optimized.dir/build
+.PHONY : singlethreaded_nonvectorized_optimized/fast
+
+#=============================================================================
+# Target rules for targets named singlethreaded_vectorized_optimized
+
+# Build rule for target.
+singlethreaded_vectorized_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlethreaded_vectorized_optimized
+.PHONY : singlethreaded_vectorized_optimized
+
+# fast build rule for target.
+singlethreaded_vectorized_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build.make lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build
+.PHONY : singlethreaded_vectorized_optimized/fast
+
+#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -152,6 +178,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... runTests"
 	@echo "... singlethreaded_nonvectorized"
+	@echo "... singlethreaded_nonvectorized_optimized"
+	@echo "... singlethreaded_vectorized_optimized"
 .PHONY : help
 
 
