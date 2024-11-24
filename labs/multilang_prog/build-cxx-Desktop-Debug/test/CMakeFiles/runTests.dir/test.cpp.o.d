@@ -321,4 +321,7 @@ test/CMakeFiles/runTests.dir/test.cpp.o: \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
  /usr/include/c++/12/tr1/riemann_zeta.tcc \
- /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/singlethreaded_nonvectorized_optimized.hpp
+ /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/singlethreaded_nonvectorized_optimized.hpp \
+ /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_optimized/singlethreaded_vectorized_optimized.hpp \
+ /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_aligned_optimized/singlethreaded_vectorized_aligned_optimized.hpp \
+ /home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/multithreaded_vectorized_aligned_optimized/multithreaded_vectorized_aligned_optimized.hpp

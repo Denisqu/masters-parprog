@@ -143,6 +143,45 @@ singlethreaded_nonvectorized_optimized/fast:
 .PHONY : singlethreaded_nonvectorized_optimized/fast
 
 #=============================================================================
+# Target rules for targets named singlethreaded_vectorized_optimized
+
+# Build rule for target.
+singlethreaded_vectorized_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlethreaded_vectorized_optimized
+.PHONY : singlethreaded_vectorized_optimized
+
+# fast build rule for target.
+singlethreaded_vectorized_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build.make lib/singlethreaded_vectorized_optimized/CMakeFiles/singlethreaded_vectorized_optimized.dir/build
+.PHONY : singlethreaded_vectorized_optimized/fast
+
+#=============================================================================
+# Target rules for targets named singlethreaded_vectorized_aligned_optimized
+
+# Build rule for target.
+singlethreaded_vectorized_aligned_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlethreaded_vectorized_aligned_optimized
+.PHONY : singlethreaded_vectorized_aligned_optimized
+
+# fast build rule for target.
+singlethreaded_vectorized_aligned_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_aligned_optimized/CMakeFiles/singlethreaded_vectorized_aligned_optimized.dir/build.make lib/singlethreaded_vectorized_aligned_optimized/CMakeFiles/singlethreaded_vectorized_aligned_optimized.dir/build
+.PHONY : singlethreaded_vectorized_aligned_optimized/fast
+
+#=============================================================================
+# Target rules for targets named multithreaded_vectorized_aligned_optimized
+
+# Build rule for target.
+multithreaded_vectorized_aligned_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multithreaded_vectorized_aligned_optimized
+.PHONY : multithreaded_vectorized_aligned_optimized
+
+# fast build rule for target.
+multithreaded_vectorized_aligned_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/multithreaded_vectorized_aligned_optimized.dir/build.make lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/multithreaded_vectorized_aligned_optimized.dir/build
+.PHONY : multithreaded_vectorized_aligned_optimized/fast
+
+#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -163,9 +202,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... multithreaded_vectorized_aligned_optimized"
 	@echo "... runTests"
 	@echo "... singlethreaded_nonvectorized"
 	@echo "... singlethreaded_nonvectorized_optimized"
+	@echo "... singlethreaded_vectorized_aligned_optimized"
+	@echo "... singlethreaded_vectorized_optimized"
 .PHONY : help
 
 

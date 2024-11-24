@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"python\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release//CMakeFiles/progress.marks
@@ -156,6 +201,45 @@ singlethreaded_vectorized_optimized/fast:
 .PHONY : singlethreaded_vectorized_optimized/fast
 
 #=============================================================================
+# Target rules for targets named singlethreaded_vectorized_aligned_optimized
+
+# Build rule for target.
+singlethreaded_vectorized_aligned_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlethreaded_vectorized_aligned_optimized
+.PHONY : singlethreaded_vectorized_aligned_optimized
+
+# fast build rule for target.
+singlethreaded_vectorized_aligned_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/singlethreaded_vectorized_aligned_optimized/CMakeFiles/singlethreaded_vectorized_aligned_optimized.dir/build.make lib/singlethreaded_vectorized_aligned_optimized/CMakeFiles/singlethreaded_vectorized_aligned_optimized.dir/build
+.PHONY : singlethreaded_vectorized_aligned_optimized/fast
+
+#=============================================================================
+# Target rules for targets named multithreaded_vectorized_aligned_optimized
+
+# Build rule for target.
+multithreaded_vectorized_aligned_optimized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multithreaded_vectorized_aligned_optimized
+.PHONY : multithreaded_vectorized_aligned_optimized
+
+# fast build rule for target.
+multithreaded_vectorized_aligned_optimized/fast:
+	$(MAKE) $(MAKESILENT) -f lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/multithreaded_vectorized_aligned_optimized.dir/build.make lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/multithreaded_vectorized_aligned_optimized.dir/build
+.PHONY : multithreaded_vectorized_aligned_optimized/fast
+
+#=============================================================================
+# Target rules for targets named fft_converter
+
+# Build rule for target.
+fft_converter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fft_converter
+.PHONY : fft_converter
+
+# fast build rule for target.
+fft_converter/fast:
+	$(MAKE) $(MAKESILENT) -f lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/fft_converter.dir/build.make lib/multithreaded_vectorized_aligned_optimized/CMakeFiles/fft_converter.dir/build
+.PHONY : fft_converter/fast
+
+#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -175,10 +259,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... fft_converter"
+	@echo "... multithreaded_vectorized_aligned_optimized"
 	@echo "... runTests"
 	@echo "... singlethreaded_nonvectorized"
 	@echo "... singlethreaded_nonvectorized_optimized"
+	@echo "... singlethreaded_vectorized_aligned_optimized"
 	@echo "... singlethreaded_vectorized_optimized"
 .PHONY : help
 

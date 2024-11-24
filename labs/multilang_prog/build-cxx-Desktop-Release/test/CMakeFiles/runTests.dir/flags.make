@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized
+CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/external/vector_class_lib -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_aligned_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/multithreaded_vectorized_aligned_optimized
 
-CXX_FLAGS = -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -std=c++20
+CXX_FLAGS = -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -fopenmp -std=c++20
 

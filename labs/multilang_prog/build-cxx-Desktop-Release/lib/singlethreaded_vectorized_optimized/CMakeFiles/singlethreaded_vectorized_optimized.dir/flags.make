@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -Dsinglethreaded_vectorized_optimized_EXPORTS
 
-CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared
+CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_vectorized_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/external/vector_class_lib
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC -std=c++20
 

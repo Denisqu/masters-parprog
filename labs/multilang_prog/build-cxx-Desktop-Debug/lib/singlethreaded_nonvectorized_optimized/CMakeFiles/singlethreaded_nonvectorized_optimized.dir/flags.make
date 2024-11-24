@@ -6,5 +6,5 @@ CXX_DEFINES = -Dsinglethreaded_nonvectorized_optimized_EXPORTS
 
 CXX_INCLUDES = -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/singlethreaded_nonvectorized_optimized/./shared -I/home/user/univer/homework_and_labs/labs/multilang_prog/cxx/lib/shared
 
-CXX_FLAGS = -DQT_QML_DEBUG -g0 -O0 -fPIC -std=c++20
+CXX_FLAGS = -DQT_QML_DEBUG -g -O0 -fPIC -std=c++20
 

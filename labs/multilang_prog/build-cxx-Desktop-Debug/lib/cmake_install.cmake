@@ -44,9 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/external/vector_class_lib/cmake_install.cmake")
   include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/shared/cmake_install.cmake")
   include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/singlethreaded_nonvectorized/cmake_install.cmake")
   include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/singlethreaded_nonvectorized_optimized/cmake_install.cmake")
+  include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/singlethreaded_vectorized_optimized/cmake_install.cmake")
+  include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/singlethreaded_vectorized_aligned_optimized/cmake_install.cmake")
+  include("/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Debug/lib/multithreaded_vectorized_aligned_optimized/cmake_install.cmake")
 
 endif()
 

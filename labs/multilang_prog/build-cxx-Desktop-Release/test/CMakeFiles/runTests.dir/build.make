@@ -95,6 +95,11 @@ test/runTests: test/CMakeFiles/runTests.dir/build.make
 test/runTests: /usr/lib/x86_64-linux-gnu/libgtest.a
 test/runTests: lib/singlethreaded_nonvectorized/libsinglethreaded_nonvectorized.so
 test/runTests: lib/singlethreaded_nonvectorized_optimized/libsinglethreaded_nonvectorized_optimized.so
+test/runTests: lib/singlethreaded_vectorized_optimized/libsinglethreaded_vectorized_optimized.so
+test/runTests: lib/singlethreaded_vectorized_aligned_optimized/libsinglethreaded_vectorized_aligned_optimized.so
+test/runTests: lib/multithreaded_vectorized_aligned_optimized/libmultithreaded_vectorized_aligned_optimized.so
+test/runTests: /usr/lib/gcc/x86_64-linux-gnu/12/libgomp.so
+test/runTests: /usr/lib/x86_64-linux-gnu/libpthread.a
 test/runTests: test/CMakeFiles/runTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runTests"
 	cd /home/user/univer/homework_and_labs/labs/multilang_prog/build-cxx-Desktop-Release/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)

@@ -1,1 +1,1 @@
-/usr/bin/g++ -fPIC -DQT_QML_DEBUG -g0 -O0 -shared -Wl,-soname,libsinglethreaded_nonvectorized_optimized.so -o libsinglethreaded_nonvectorized_optimized.so CMakeFiles/singlethreaded_nonvectorized_optimized.dir/singlethreaded_nonvectorized_optimized.cpp.o 
+/usr/bin/g++ -fPIC -DQT_QML_DEBUG -g -O0 -shared -Wl,-soname,libsinglethreaded_nonvectorized_optimized.so -o libsinglethreaded_nonvectorized_optimized.so CMakeFiles/singlethreaded_nonvectorized_optimized.dir/singlethreaded_nonvectorized_optimized.cpp.o 
